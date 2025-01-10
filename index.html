@@ -7,74 +7,90 @@
     <style>
         body {
             font-family: sans-serif;
+            margin: 20px;
         }
-        .header {
-            text-align: center;
-            font-size: 20px;
-            font-weight: bold;
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
-        .contact {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .summary {
-            margin-bottom: 20px;
-        }
-        .skills, .experience, .education {
-            margin-bottom: 20px;
-        }
-        .skills h3, .experience h3, .education h3 {
+
+        .section-title {
             font-size: 18px;
             font-weight: bold;
+            margin-bottom: 10px;
         }
-        .experience ul, .education ul {
+
+        ul {
             list-style: none;
             padding-left: 20px;
         }
-        .experience li, .education li {
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Add some basic styling to improve readability */
+        .contact p {
+            margin: 5px 0;
+        }
+
+        .summary {
+            margin-bottom: 20px;
+        }
+
+        .experience h4 {
+            font-weight: bold;
             margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Badrdeen "Deen"</h1>
-        <h2>Economist, Risk manager, and cloud solution architect</h2>
-    </div>
-    <div class="contact">
-        <p>San Diego, CA</p>
-        <p><a href="tel:+12028554310">+1(202)8554310</a> | <a href="mailto:badrdeen.mail@gmail.com">badrdeen.mail@gmail.com</a> | LinkedIn</p>
-    </div>
-    <div class="summary">
-        <p>Talented economist, seasoned Financial Risk Manager with proven experience. Deep understanding of Macroeconomic and cash flow management, and Self-taught Cloud engineering, AWS Certified Solution Architect and GCP . Passionate about applying machine learning and AI to optimize operations and improve decision-making.</p>
-    </div>
-    <div class="skills">
-        <h3>Technical Skills</h3>
+    <div class="container">
+        <div class="section-title">Badrdeen "Deen"</div>
+        <div class="section-title">Economist, Risk Manager, and Cloud Solution Architect</div>
+        <div class="contact">
+            <p>San Diego, CA</p> 
+            <p><a href="tel:+12028554310">+1(202)8554310</a> | <a href="mailto:badrdeen.mail@gmail.com">badrdeen.mail@gmail.com</a> | <a href="https://www.linkedin.com/in/your-linkedin-profile-url" target="_blank">LinkedIn</a></p> 
+        </div>
+
+        <div class="section-title">PROFESSIONAL SUMMARY</div>
+        <p>Talented economist, seasoned Financial Risk Manager with proven experience. Deep understanding of Macroeconomic and cash flow management, and Self-taught Cloud engineering, AWS Certified Solution Architect and GCP Certified. Passionate about applying machine learning and AI to optimize operations and improve decision-making.</p>
+
+        <div class="section-title">Technical Skills</div>
         <ul>
             <li>Certified AWS Solution Architect</li>
-            <li>Programming Languages: Python, SQL, Yaml, Git, Terraform</li>
+            <li>Programming Languages: Python, SQL, YAML, Git, Terraform</li>
             <li>Cloud Platforms: AWS, GCP, Databricks, Snowflex</li>
-            <li>Data engineering: Apache Spark, Apache Iceberg</li>
-            <li>Data architecting: Data lakehouse, Delta Lake, Data mesh</li>
-            <li>GenAi solution architect</li>
+            <li>Data Engineering: Apache Spark, Apache Iceberg</li>
+            <li>Data Architecting: Data lakehouse, Delta Lake, Data mesh</li>
+            <li>GenAI Solution Architect</li>
         </ul>
-    </div>
-    <div class="experience">
-        <h3>Experiences</h3>
-        <h4>Senior Investment Analyst at Yatraa Ventures, Washington D.C (Jan 2020- April2020)</h4>
+
+        <div class="section-title">Experiences</div>
+        <h4>Senior Investment Analyst | Yatraa Ventures | Washington D.C. | Jan 2020 - April 2020</h4>
         <ul>
             <li>Developed Risk Assessment Platform: Constructed a comprehensive risk assessment platform for a $3.5 billion oil refinery project to aid management in informed decision-making.</li>
             <li>Contributed to Investment Analysis: Assisted in evaluating investment opportunities, conducting due diligence, and providing strategic insights.</li>
         </ul>
-        <h4>The Central Bank of Libya, Tripoli (September 2010 – August 2019) - Economist/Risk Analyst</h4>
+        <h4>Economist/Risk Analyst | The Central Bank of Libya | Tripoli | September 2010 - August 2019</h4>
         <ul>
-            <li>Navigated Complex Risk Landscapes: Analyzed a wide range of market risks, including geopolitical events and global economic shocks (e.g., European debt crisis, UK referendum, Fed rate)and impacts on Asset allocation and currency basket</li>
+            <li>Navigated Complex Risk Landscapes: Analyzed a wide range of market risks, including geopolitical events and global economic shocks (e.g., European debt crisis, UK referendum, Fed rate) and impacts on Asset allocation and currency basket.</li>
             <li>Enhanced Investment Decision-Making: Provided timely and insightful analysis to inform investment decisions and mitigate potential risks and successfully improved performance.</li>
-            <li>Optimized Liquidity Management: Contributed to the development and implementation of strategies to maintain optimal liquidity levels and safeguard the bank's operations and Credit assessment</li>
+            <li>Optimized Liquidity Management: Contributed to the development and implementation of strategies to maintain optimal liquidity levels and safeguard the bank's operations.</li>
             <li>Strengthened Operational Resilience: Developed and implemented risk mitigation strategies to ensure the bank's resilience to adverse events.</li>
         </ul>
-    </div>
-    <div class="education">
-        <h3>Education and Qualifications</h3>
+
+        <div class="section-title">Education and Qualifications</div>
         <ul>
-            <li>THE GEORGE WASHINGTON UNIVERSITY, School of Business Washington, DC - Capital Market Development Certificate. IFC-Milken Institute Capital Market program.</
+            <li>**THE GEORGE WASHINGTON UNIVERSITY**, School of Business, Washington, DC - Capital Market Development Certificate. IFC-Milken Institute Capital Market program.</li> 
+            <li>**THE UNIVERSITY OF TRIPOLI**, Faculty of Economics, Tripoli - Masters in International Economic Relations. 2009-2012. Specialization: International Finance, The Central Bank of Libya and how the country manages its reserves. GPA: 3.36.</li>
+            <li>**THE UNIVERSITY OF TRIPOLI**, Faculty of Economics and Political Science, Tripoli - Bachelor of Science in Economics. 2004-2008.</li>
+            <li>**Language Studies International**, San Diego, California, U.S. - Cultural exchange while earning LSI Diplomas focusing on English Business Communication Skills, and General Language School. 2013-2014.</li> 
+        </ul>
+    </div>
+</body>
+</html>
