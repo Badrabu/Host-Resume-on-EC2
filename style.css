@@ -1,59 +1,157 @@
+:root {
+    /* Color variables */
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --light-gray: #ecf0f1;
+    --border-color: #e0e0e0;
+    
+    /* Spacing variables */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+}
+
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: var(--spacing-md);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-gray);
 }
 
 .container {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-header {
-	text-align: center;
-	margin-bottom: 50px;
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: var(--spacing-lg) 0 var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--accent-color);
 }
 
-h1 {
-	font-size: 36px;
-	margin: 0;
+/* Header section */
+.section-title:first-child {
+    font-size: 2rem;
+    margin-top: 0;
+    border-bottom: none;
 }
 
-p {
-	font-size: 18px;
-	margin: 0;
+.contact {
+    background-color: var(--light-gray);
+    padding: var(--spacing-md);
+    border-radius: 6px;
+    margin: var(--spacing-md) 0;
 }
 
-section {
-	margin-bottom: 50px;
+.contact p {
+    margin: var(--spacing-sm) 0;
 }
 
-h2 {
-	font-size: 24px;
-	margin-bottom: 20px;
+.contact a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
+.contact a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Skills section */
 ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
 }
 
 li {
-	display: inline-block;
-	margin-right: 10px;
-	font-size: 18px;
+    margin-bottom: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background-color: var(--light-gray);
+    border-radius: 4px;
+    transition: transform 0.2s ease;
 }
 
-h3 {
-	font-size: 20px;
-	margin-top: 20px;
-	margin-bottom: 10px;
+li:hover {
+    transform: translateX(5px);
 }
 
-p {
-	font-size: 18px;
-	line-height: 1.5;
+/* Experience section */
+.experience h4 {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin: var(--spacing-md) 0 var(--spacing-sm);
 }
 
+.experience ul {
+    display: block;
+}
+
+.experience li {
+    background-color: transparent;
+    padding-left: var(--spacing-md);
+    border-left: 2px solid var(--accent-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.experience li:hover {
+    transform: none;
+}
+
+/* Education section */
+.education li {
+    background-color: transparent;
+    padding: var(--spacing-md);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: var(--spacing-md);
+    }
+    
+    ul {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 1.25rem;
+    }
+    
+    .section-title:first-child {
+        font-size: 1.75rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        background: white;
+    }
+    
+    .container {
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    .contact a {
+        color: var(--text-color);
+    }
+}
